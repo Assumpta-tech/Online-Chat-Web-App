@@ -1,0 +1,84 @@
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #3d0027;
+  border: 2px solid #3d0027;
+}
+.nav-link {
+  color: #ffffff !important;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+.swipping {
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#carouselExampleIndicators {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1/1;
+  border: 2rcap solid #ff4c93;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.carousel-indicators button {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ff4c93;
+  border-radius: 2px;
+  width: 1rem;
+}
+.carousel-indicators button:hover {
+  background-color: #3d0027;
+}
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  border: 1.5px solid #3d0027;
+  border-radius: 2px;
+}
+.carousel-control-prev .visually-hidden,
+.carousel-control-next .visually-hidden {
+  display: none;
+}
+
+footer {
+  color: #ffffff;
+  padding: 30px;
+  background-color: #3d0027;
+  border: 2px solid #3d0027;
+  width: 100%;
+  position: static;
+  bottom: 0;
+}
+section {
+  padding: 1rem;
+}
+@media (min-width: 768) {
+  section {
+    padding: 2rem;
+  }
+}
