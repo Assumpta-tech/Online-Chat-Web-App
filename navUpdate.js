@@ -1,4 +1,5 @@
-function afterSignIn() {
+//added export keyword
+export function afterSignIn() {
   const email = document.getElementById("form3Example3c").value;
   const password = document.getElementById("form3Example4c").value;
 
@@ -11,7 +12,11 @@ function afterSignIn() {
 }
 
 // Update navbar only on Person.html
-function updateNavbarForUser() {
+//added export keyword
+export function updateNavbarForUser() {
+  //checking if the user is loggedin, to get the key then the navbar will be updated
+  const user = localStorage.getItem("isLoggedIn");
+  if (user) return;
   const feature = document.getElementById("nav-feature");
   const subscription = document.getElementById("nav-subscription");
   const signin = document.getElementById("nav-signin");
