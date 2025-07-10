@@ -16,7 +16,7 @@ export function afterSignIn() {
 export function updateNavbarForUser() {
   //checking if the user is loggedin, to get the key then the navbar will be updated
   const user = localStorage.getItem("isLoggedIn");
-  if (user) return;
+  if (!user) return;
   const feature = document.getElementById("nav-feature");
   const subscription = document.getElementById("nav-subscription");
   const signin = document.getElementById("nav-signin");
